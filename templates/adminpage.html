@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Admin Dashboard</title>
+</head>
+<body style="background-color:grey;">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />-->
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Online examination Website</a>
+        <ul class="navbar-nav px-3" >
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Change password</a>
+          </li>
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+          </li>
+        </ul>
+      </nav>
+    <main role="main" style="text-align: center;">
+        
+        <h1 class="h2">Dashboard</h1>
+
+        <!--added-->
+        <div style="text-align: center; color: gold; font: 15px; padding-top: 20px;">
+          {% for message in messages %}
+          <h6> {{message}} </h6>
+          {% endfor %}
+        </div>
+
+        <div class="row" style="align-content: center; margin-left: 18%;margin-top: 5%;">
+
+    <div class="col">
+            <div class="card text-black #FFFFFF mb-3" style="max-width: 18rem;">
+                <!--<div class="card-header">
+                  <a href="file:///C:/Users/ashkore789/.vscode/Form/teacher-registration-form.html">Add teacher.</a>
+                </div>-->
+                <!--<div class="card-body">
+                  <i class="fa fa-users"></i>
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 
+                </div>-->
+                <div class="card" style="width: 18rem;">
+                  <!--<img src="..." class="card-img-top" alt="...">-->
+                  <div class="card-body">
+                    <h5 class="card-title">Create User</h5>
+                    <p class="card-text">admin has to add users as students and teachers</p>
+                    <div style="padding-bottom: 10px;">
+                      <form form action="createStudent">
+                        <button class="btn btn-primary">Click to create student</button></form>
+                    </div>
+                    <div>
+                      <form form action="createTeacher">
+                        <button class="btn btn-primary">Click to create teacher</button></form>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="col">
+                <div class="card text-black #FFFFFF mb-3" style="max-width: 18rem;">
+                    <!--<div class="card-header">
+                      <a href="file:///C:/Users/ashkore789/.vscode/Form/student-registration-form.html">Add Student.</a>
+                    </div>-->
+                    <div class="card-body">
+                      <!--bg-success-->
+                      <h5 class="card-title">Delete user</h5>
+                      <p class="card-text">admin has to add users as students and teachers</p>
+                      <div style="padding-bottom: 10px;">
+                        <form action="deleteStudent" ><button class="btn btn-primary">Click to delete student</button></form>
+                      </div>
+                      <div>
+                        <form action="deleteTeacher"><button class="btn btn-primary">Click to delete teacher</button></form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card text-black #FFFFFF mb-3" style="max-width: 18rem;height: 14.2rem;">
+                      <!--<div class="card-header">
+                        <a href="file:///C:/Users/ashkore789/.vscode/Form/student-registration-form.html">Add Student.</a>
+                      </div>-->
+                      <div class="card-body">
+                        <!--bg-success-->
+                        <h5 class="card-title">View user</h5>
+                        <p class="card-text">admin can view users list </p>
+                        <div style="padding-bottom: 10px;padding-top: 20px;">
+                          <form><button class="btn btn-primary">Click to view student list</button></form>
+                        </div>
+                        <div>
+                          <form><button class="btn btn-primary">Click to view teacher list</button></form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Create Test
+        </title>
+    </head>
+    <body style="text-align: center;">
+        <h1 style="color: black;">
+            Create Test
+        </h1>
+        <p>
+        Click on the button to create
+        a form dynamically
+        </p>
+        <button onClick="GFG_Fun()">
+            Add Objective
+        </button>
+        <button onClick="GFG()">
+            Add Subjective
+        </button>
+        <button type="submit">Done</button>
+        <p style="color: brown;" id="GFG_DOWN"></p>
+<script>
+    var down = document.getElementById("GFG_DOWN");
+            
+    // Create a break line element
+    var br = document.createElement("br");
+    function GFG_Fun() {
+                
+    // Create a form synamically
+    var form = document.createElement("form");
+    form.setAttribute("method", "post");
+    form.setAttribute("action", "submit.php");
+ 
+    // Create an input element for Objective Question
+    var FN = document.createElement("input");
+    FN.setAttribute("type", "text");
+    FN.setAttribute("name", "question");
+    FN.setAttribute("placeholder", "Type question");
+ 
+    // Create an input element for Option 1
+    var DOB = document.createElement("input");
+    DOB.setAttribute("type", "text");
+    DOB.setAttribute("name", "option1");
+    DOB.setAttribute("placeholder", "option1");
+ 
+    // Create an input element for Option 2
+    var EID = document.createElement("input");
+    EID.setAttribute("type", "text");
+    EID.setAttribute("name", "option2");
+    EID.setAttribute("placeholder", "option2");
+ 
+    // Create an input element for Option 3
+    var PWD = document.createElement("input");
+    PWD.setAttribute("type", "text");
+    PWD.setAttribute("name", "option3");
+    PWD.setAttribute("placeholder", "option3");
+ 
+    // Create an input element for Option correct
+    var RPWD = document.createElement("input");
+    RPWD.setAttribute("type", "text");
+    RPWD.setAttribute("name", "option4");
+    RPWD.setAttribute("placeholder", "correct option");
+ 
+    var mar=document.createElement("input");
+    mar.setAttribute("type", "number");
+    mar.setAttribute("name", "option4");
+    mar.setAttribute("placeholder", "marks for this question");
+                // create a submit button
+                var s = document.createElement("input");
+                s.setAttribute("type", "submit");
+                s.setAttribute("value", "Submit");
+                
+                // Append the full name input to the form
+                form.appendChild(FN);
+                
+                // Inserting a line break
+                form.appendChild(br.cloneNode());
+                
+                // Append the DOB to the form
+                form.appendChild(DOB);
+                form.appendChild(br.cloneNode());
+                
+                // Append the emailID to the form
+                form.appendChild(EID);
+                form.appendChild(br.cloneNode());
+                
+                // Append the Password to the form
+                form.appendChild(PWD);
+                form.appendChild(br.cloneNode());
+                
+                // Append the ReEnterPassword to the form
+                form.appendChild(RPWD);
+                form.appendChild(br.cloneNode());
+                
+                //Append marks to the form
+                form.appendChild(mar);
+                form.appendChild(br.cloneNode());
+                // Append the submit button to the form
+                form.appendChild(s);
+ 
+                document.getElementsByTagName("body")[0]
+            .appendChild(form);
+            }
+            function GFG() {
+                
+                // Create a form synamically
+                var form = document.createElement("form");
+                form.setAttribute("method", "post");
+                form.setAttribute("action", "submit.php");
+            
+                // Create an input element for Full Name
+                var FN = document.createElement("input");
+                FN.setAttribute("type", "text");
+                FN.setAttribute("name", "question");
+                FN.setAttribute("placeholder", "Type question");
+ 
+                var mks=document.createElement("input");
+                mks.setAttribute("type", "number");
+                mks.setAttribute("name", "option4");
+                mks.setAttribute("placeholder", "marks for this question");
+            
+                            // create a submit button
+                            var s = document.createElement("input");
+                            s.setAttribute("type", "submit");
+                            s.setAttribute("value", "Submit");
+                            
+                            // Append the full name input to the form
+                            form.appendChild(FN);
+                            
+                            // Inserting a line break
+                            form.appendChild(br.cloneNode());
+                    
+                            form.appendChild(mks);
+                            form.appendChild(br.cloneNode());
+                            // Append the submit button to the form
+                            form.appendChild(s);
+            
+                            document.getElementsByTagName("body")[0]
+                        .appendChild(form);
+                        }
+        </script>
+    </body>
+</html>

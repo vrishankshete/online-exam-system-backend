@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Teacher Dashboard</title>
+</head>
+<body style="background-color:grey;">
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Online examination Website</a>
+        <ul class="navbar-nav px-3">
+          <!--<li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+          </li>-->
+          <i style="font-size:29px " class="fa">&#xf08b;</i>
+          <!--Add drop down list for signout icon-->
+          <!--<label for="navbar-nav px-3"></label>
+          <select id="signout">
+          <option value="Change password">Change password</option>
+          <option value="log out">Log out</option>
+          </select>-->
+        </ul>
+      </nav>
+ 
+ 
+     <!-- <div class="container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <span data-feather="home"></span>
+                    Dashboard <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file"></span>
+                    Create Question paper
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="shopping-cart"></span>
+                    Schedule exam
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="users"></span>
+                    View attendance
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="bar-chart-2"></span>
+                    Reports
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="layers"></span>
+                    Integrations
+                  </a>
+                </li>
+              </ul>
+  
+            </div>
+          </nav>-->
+          <main role="main" style="text-align: center;">
+        
+              <h1 class="h2">Dashboard</h1>
+              
+            <!-- cards -->
+            <div class="row" style="align-content: center; margin-left: 18%;margin-top: 5%;">
+            
+            <div class="col">
+            <div class="card text-black #FFFFFF mb-3" style="max-width: 18rem;">
+              <!--<div class="card-header"></div>-->
+                <div class="card-body">
+                  <h5 class="card-title">Create Test</h5>
+                  <p class="card-text">option for subjective and objective avaiable</p>
+                  <div style="padding-bottom: 10px;">
+                    <form action="createTest"><button class="btn btn-primary">Click to Create</button></form>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="col">
+              <div class="card text-black #FFFFFF mb-3" style="max-width: 18rem;">
+                <!--<div class="card-header"></div>-->
+                <div class="card-body">
+                  <h5 class="card-title">schedule test</h5>
+                  <p class="card-text">Schedule created test</p>
+                  <div style="padding-bottom: 10px;">
+                    <form><a href="#" class="btn btn-primary">Click to Schedule</a></form>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            
+            </div>
+ 
+            <div class="row" style="align-content: center; margin-left: 18%;margin-top: 5%;">
+ 
+                <div class="col">
+                <div class="card text-black #FFFFFF mb-3" style="max-width: 18rem "  >
+                    <!--<div class="card-header"></div>-->
+                    <div class="card-body">
+                      <h5 class="card-title">Evaluate test</h5>
+                      <p class="card-text">Evaluate subjective</p>
+                      <div style="padding-bottom: 10px;">
+                        <form><button class="btn btn-primary">Click to Evaluate</button></form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col">
+                  <div class="card text-black #FFFFFF mb-3" style="max-width: 18rem;">
+                    <!--<div class="card-header"></div>-->
+                    <div class="card-body">
+                      <h5 class="card-title">View attendence</h5>
+                      <p class="card-text">Teacher can view attendence</p>
+                      <div style="padding-bottom: 10px;">
+                        <form><button class="btn btn-primary">Click to view</button></form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+               </div>
+                </div>
+    
+          </main>
+ 
+ 
+        
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
